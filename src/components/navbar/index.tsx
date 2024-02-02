@@ -1,3 +1,4 @@
+import { ModeToggle } from "../mode-toggle";
 import { MainNav } from "./main-nav";
 import { Search } from "./search";
 import { UserNav } from "./user-nav";
@@ -11,6 +12,7 @@ const Navbar = () => {
             <MainNav className="mx-6" />
             <div className="ml-auto flex items-center space-x-4">
                 <Search />
+                <ModeToggle />
                 <UserNav />
             </div>
         </div>
