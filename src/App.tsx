@@ -10,6 +10,10 @@ import DepartmentsPage from "./components/pages/departments";
 import DepartmentPage from "./components/pages/department";
 import TeachersPage from "./components/pages/teachers";
 import TeacherPage from "./components/pages/teacher";
+import DegreesPage from "./components/pages/degrees";
+import DegreePage from "./components/pages/degree";
+import SchemesPage from "./components/pages/schemes";
+import SchemePage from "./components/pages/scheme";
 
 const App = () => {
     return (
@@ -23,8 +27,12 @@ const App = () => {
                 <Route path="courses/:code" element={<CoursePage />} />
                 <Route path="departments" element={<DepartmentsPage />} />
                 <Route path="departments/:code" element={<DepartmentPage />} />
+                <Route path="degrees" element={<DegreesPage />} />
+                <Route path="degrees/:code" element={<DegreePage />} />
                 <Route path="teachers" element={<TeachersPage />} />
                 <Route path="teachers/:id" element={<TeacherPage />} />
+                <Route path="schemes" element={<SchemesPage />} />
+                <Route path="schemes/:sid" element={<SchemePage />} />
             </Route>
         </Routes>
     );

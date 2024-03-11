@@ -38,6 +38,18 @@ export interface Teacher {
     user: number;
 }
 
+export interface Degree {
+    code: string;
+    name: string;
+}
+
+export interface Scheme {
+    sid: number;
+    year: number;
+    guidelines_doc_url: string;
+    degree: string;
+}
+
 export interface User {
     pk: number;
     username: string;

@@ -19,6 +19,14 @@ export function MainNav({ className }: React.HTMLAttributes<HTMLElement>) {
             href: `/departments`,
             label: "Departments",
         },
+        {
+            href: `/degrees`,
+            label: "Degrees",
+        },
+        {
+            href: `/schemes`,
+            label: "Schemes",
+        },
     ];
 
     return (
